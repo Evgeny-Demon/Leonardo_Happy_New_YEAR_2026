@@ -1,35 +1,56 @@
 <html>
-<head></head>
-<body>
-<div style="background-image: url('assets/background_BMK.jpg'); 
-            background-size: cover; 
-            height: auto;
-            display: block;
-            height: 100vh">
-  <h1 strong style="color: brown;">Внимание акция в "Леонарде"!</h1>
-  <h1 strong style ="color: blueviolet;" >Спеши получить свою открыточку! Только до конца января не упусти невероятное путешествие в мир офисных открыток "Леонарды"!</h1>
-  <h2 style="color: rgb(0, 27, 95);">Мы - группа маркетологов, которая решила создать акцию сама для себя, а потому что никто кроме нас!</h2>
-  <h3 style="color: rgb(0, 27, 95);">Организаторы акции:</h3>
-  <h3><a href="assets/Evgen.jpg">Евгений Дьяконов</a></h3><h3 style="color: brown;">- Технический директор акции открыток, Директор хорошего настроения, 
-    Главный исполнительный продюссер акции открыток, 
-    Заместитель директора по развитию акции открыток,
-    Генеральный директор по визуальному контролю других директоров и их замов, 
-    Директор синхронизации обеденных перерывов, 
-    Директор планирования дед-лайнов и их провалов! </h3>
-  <h3><a href="assets/sasha.jpg">Александр Бобров</a></h3> <h3 style="color: brown;">- Арт Директор акции открыток, 
-    Директор по развитию и планированию акции открыток, 
-    Заместитель генерального директора по визуальному контролю других директоров и их замов,
-    Генеральный директор белого автомобиля ауди А3, 
-    Директор кофейных перерывов, </h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акция в "Леонарде"</title>
+  <style>
+    .bg-container {
+      background-image: url('assets/background_BMK.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
+      padding: 2rem;
+      margin: 0;
+      color: white; /* или подберите контрастный цвет */
+    }
 
-  <h4 style="color: rgb(0, 27, 95);">Для участия в акции вам потребуется перейти по ссылке! ВНИМАНИЕ: Каждый строго переходит по своей ссылке! Далее ссылки:</h4>
-  <ul>
-  <li><a href="assets/Nadezhda.jpg">Надежда!</a></li>
-  <li><a href="assets/Elena.jpg">Елена!</a></li>
-  <li><a href="assets/Liza.jpg">Елизавета!</a></li>
-  <li><a href="assets/natalia.png">Наталья!</a></li>
-  <li><a href="assets/Olga.jpg">Ольга!</a></li>
-</ul>       
-</div>
+    /* Опционально: улучшаем читаемость */
+    .bg-container h1, .bg-container h2, .bg-container h3, .bg-container h4, .bg-container ul {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 0.5 rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-container">
+    <h1 style="color: brown;">До конца января не упусти невероятное путешествие в мир офисных открыток "Леонарды"!</h1>
+    <h2 style="color: rgb(0, 27, 95);">Организаторы акции:</h2>
+    
+    <div>
+      <h3><a href="assets/Evgen.jpg">Евгений Дьяконов</a></h3>
+      <h3 style="color: brown;">- Технический Директор хорошего настроения, Главный исполнительный продюссер направления открытки на Новый год, Генеральный директор по визуальному контролю других директоров и их замов, Директор синхронизации обеденных перерывов, Директор планирования дед-лайнов и их провалов!</h3>
+    </div>
+
+    <div>
+      <h3><a href="assets/sasha.jpg">Александр Бобров</a></h3>
+      <h3 style="color: brown;">- Арт Директор, Директор по развитию и планированию акции открыток, Заместитель генерального директора по визуальному контролю других директоров и их замов, директор направления «из хз я делаю тз»</h3>
+    </div>
+
+    <h3 style="color: rgb(0, 67, 20);">Для участия в акции вам потребуется перейти по ссылке! ВНИМАНИЕ: Каждый строго переходит по своей ссылке!</h3>
+    
+    <ul>
+      <li><a href="assets/Nadezhda.jpg">Надежда!</a></li>
+      <li><a href="assets/Elena.jpg">Елена!</a></li>
+      <li><a href="assets/Liza.jpg">Елизавета!</a></li>
+      <li><a href="assets/natalia.png">Наталья!</a></li>
+      <li><a href="assets/Olga.jpg">Ольга!</a></li>
+    </ul>
+  </div>
 </body>
 </html>
